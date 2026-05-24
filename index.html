@@ -70,6 +70,7 @@
         "image": "https://gumbau.coach/og-image.jpg",
         "email": "ema@gumbau.coach",
         "telephone": "+34667856528",
+        "sameAs": ["https://www.instagram.com/emagumbau/"],
         "address": {
           "@type": "PostalAddress",
           "addressLocality": "Barcelona",
@@ -181,10 +182,12 @@
         class="max-w-7xl mx-auto px-5 sm:px-8 h-16 flex items-center justify-between"
       >
         <a href="#" class="flex items-center gap-2.5 group">
-          <div
-            class="w-8 h-8 rounded-md bg-lime-400 flex items-center justify-center text-ink-950 font-display font-bold text-sm"
-          >
-            EG
+          <div class="w-9 h-9 rounded-full p-[2px] bg-lime-400">
+            <img
+              src="profile.jpg"
+              alt="Emanuel Gumbau"
+              class="w-full h-full rounded-full object-cover"
+            />
           </div>
           <span class="font-display font-semibold tracking-tight">
             Emanuel Gumbau
@@ -241,7 +244,7 @@
               <br />
               de <span class="text-lime-400">élite</span>,
               <br />
-              <span class="text-stroke">ahora a tu alcance.</span>
+              <span class="italic font-light text-white/55">ahora a tu alcance.</span>
             </h1>
 
             <p class="mt-8 text-lg text-white/70 max-w-xl leading-relaxed">
@@ -972,6 +975,17 @@
                 />
               </div>
               <div class="col-span-2">
+                <label class="block text-xs uppercase tracking-wider text-white/50 mb-2">
+                  Teléfono <span class="normal-case text-white/30">(opcional)</span>
+                </label>
+                <input
+                  type="tel"
+                  name="telefono"
+                  class="w-full bg-ink-950/60 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-lime-400 transition"
+                  placeholder="+34 ..."
+                />
+              </div>
+              <div class="col-span-2">
                 <label class="block text-xs uppercase tracking-wider text-white/50 mb-2">Servicio de interés</label>
                 <select name="servicio" class="w-full bg-ink-950/60 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-lime-400 transition">
                   <option>Entrenamiento online (Más popular)</option>
@@ -1011,13 +1025,14 @@
     <footer class="border-t border-white/5 py-10">
       <div class="max-w-7xl mx-auto px-5 sm:px-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-white/40">
         <div class="flex items-center gap-2.5">
-          <div class="w-7 h-7 rounded-md bg-lime-400 flex items-center justify-center text-ink-950 font-display font-bold text-xs">EG</div>
+          <div class="w-8 h-8 rounded-full p-[2px] bg-lime-400">
+            <img src="profile.jpg" alt="Emanuel Gumbau" class="w-full h-full rounded-full object-cover" />
+          </div>
           <span>© 2026 Emanuel Gumbau. Todos los derechos reservados.</span>
         </div>
         <div class="flex gap-6">
-          <a href="#" class="hover:text-white transition">Instagram</a>
-          <a href="#" class="hover:text-white transition">LinkedIn</a>
-          <a href="#" class="hover:text-white transition">Email</a>
+          <a href="https://www.instagram.com/emagumbau/" target="_blank" rel="noopener" class="hover:text-white transition">Instagram</a>
+          <a href="mailto:ema@gumbau.coach" class="hover:text-white transition">Email</a>
         </div>
       </div>
     </footer>
