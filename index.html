@@ -1007,6 +1007,22 @@
                   placeholder="Tu nivel, edad, objetivos, lesiones previas..."
                 ></textarea>
               </div>
+              <div class="col-span-2 flex items-start gap-3 pt-1">
+                <input
+                  type="checkbox"
+                  id="consent"
+                  name="consentimiento"
+                  value="Acepto la política de privacidad"
+                  required
+                  class="mt-0.5 w-4 h-4 shrink-0 accent-lime-400 cursor-pointer"
+                />
+                <label for="consent" class="text-xs text-white/60 leading-relaxed cursor-pointer">
+                  He leído y acepto la
+                  <a href="/privacy" target="_blank" class="text-lime-400 hover:underline">Política de Privacidad</a>
+                  y el tratamiento de mis datos personales con la finalidad de
+                  responder a mi consulta.
+                </label>
+              </div>
               <div class="col-span-2">
                 <button
                   type="submit"
@@ -1034,9 +1050,10 @@
           </div>
           <span>© 2026 Emanuel Gumbau. Todos los derechos reservados.</span>
         </div>
-        <div class="flex gap-6">
+        <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
           <a href="https://www.instagram.com/emagumbau/" target="_blank" rel="noopener" class="hover:text-white transition">Instagram</a>
           <a href="mailto:ema@gumbau.coach" class="hover:text-white transition">Email</a>
+          <a href="/privacy" class="hover:text-white transition">Privacidad y Aviso Legal</a>
         </div>
       </div>
     </footer>
