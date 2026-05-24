@@ -164,9 +164,13 @@
           transparent 60%
         );
       }
-      .text-stroke {
-        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.18);
-        color: transparent;
+      .marker-underline {
+        text-decoration: underline;
+        text-decoration-color: #c8ff2e;
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.18em;
+        text-decoration-skip-ink: none;
+        filter: drop-shadow(0 0 12px rgba(200, 255, 46, 0.35));
       }
       details[open] summary .chev {
         transform: rotate(45deg);
@@ -244,7 +248,7 @@
               <br />
               de <span class="text-lime-400">élite</span>,
               <br />
-              <span class="italic font-light text-white/55">ahora a tu alcance.</span>
+              <span class="marker-underline">ahora a tu alcance.</span>
             </h1>
 
             <p class="mt-8 text-lg text-white/70 max-w-xl leading-relaxed">
